@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: kateivan/project_django_web
+    image: kateivan/django_project
     command: gunicorn django_project.wsgi:application --bind 0.0.0.0:8000
     ports:
       - 8080:8000
